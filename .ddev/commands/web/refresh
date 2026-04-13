@@ -1,0 +1,119 @@
+#!/bin/bash
+
+## Description: Updates your local project and site to match the current working copy.
+## Usage: refresh <option>*
+## Example: Available options:\n  help       : prints this message\n  front      : builds front-end resources\n  back       : builds back-end resources\n  conf|drupal: imports configs, updates the database and rebuilds caches\n  all        : runs all operations\nIf no option is provided, 'all' is assumed.\n\nNote that composer install is always run, no matter what option(s) are chosen.
+
+# Tell the script to exit on first error and enforce variable declaration
+set -eu
+# Allow aliases
+shopt -s expand_aliases
+
+# Functions
+
+UPDATE_PROJECT=1
+UPDATE_BACKEND=0
+UPDATE_FRONTEND=0
+UPDATE_DRUPALCONF=0
+
+# Parse arguments
+ARGS=("$@")
+# Default to all if no argument provided
+if [[ $# -eq 0 ]]; then
+    ARGS=("all")
+fi
+
+while [[ ${#ARGS[@]} -gt 0 ]]; do
+    KEY=${ARGS[0]}
+    ARGS=("${ARGS[@]:1}")
+
+    case $KEY in
+        back|backend)
+            UPDATE_BACKEND=1
+            ;;
+        front|frontend)
+            UPDATE_FRONTEND=1
+            ;;
+        conf|config|drupal)
+            UPDATE_DRUPALCONF=1
+            ;;
+        all)
+            UPDATE_BACKEND=1
+            UPDATE_FRONTEND=1
+            UPDATE_DRUPALCONF=1
+            ;;
+        --help|help)
+            echo 'DDEV Refresh command.'
+            echo '  Updates your local project and site to match the current working copy.'
+            echo ''
+            echo 'Usage: ddev refresh <option>*'
+            echo '  Available options:'
+            echo '    help       : prints help message'
+            echo '    front      : builds front-end resources'
+            echo '    back       : builds back-end resources'
+            echo '    conf|drupal: imports configs, updates the database and rebuilds caches'
+            echo '    all        : runs all operations'
+            echo "  If no option is provided, 'all' is assumed."
+            echo ''
+            echo 'Note that composer install is always run, no matter what option(s) are chosen.'
+            exit
+            ;;
+        *)
+            echo "Invalid argument: '$KEY'"
+            exit 1
+            ;;
+    esac
+done
+
+echo '# Update project packages #####################################################'
+if [ "$UPDATE_PROJECT" == "1" ]; then
+    composer install
+    composer check-platform-reqs
+    drush status
+else
+    echo '* Skipping *'
+fi
+
+echo '# Build backend ###############################################################'
+if [ "$UPDATE_BACKEND" == "1" ]; then
+    echo 'Nothing to do'
+else
+    echo '* Skipping *'
+fi
+
+
+echo '# Build frontend ##############################################################'
+if [ "$UPDATE_FRONTEND" == "1" ]; then
+    echo 'Nothing to do'
+else
+    echo '* Skipping *'
+fi
+
+echo '# Update Drupal conf and database #############################################'
+if [ "$UPDATE_DRUPALCONF" == "1" ]; then
+    echo "## Switch on maintenance mode ##"
+    drush sset system.maintenance_mode 1 --input-format=integer
+
+    echo "## Database updates ##"
+    drush updb -y
+
+    echo "## Import configuration ##"
+    drush cim -y
+
+    # Let's disable this for now, as we are not using translations yet.
+    # but we might use it in the future.
+    # echo "## Check for and import translations ##"
+    # drush locale:check
+    # drush locale:update
+
+    echo "## Cache rebuild ##"
+    drush cr
+
+    echo "## Switch off maintenance mode ##"
+    drush sset system.maintenance_mode 0 --input-format=integer
+
+    echo "## Generate login link ##"
+    drush uli
+else
+    echo '* Skipping *'
+fi
