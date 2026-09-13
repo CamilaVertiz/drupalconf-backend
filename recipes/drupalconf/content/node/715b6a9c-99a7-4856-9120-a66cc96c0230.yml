@@ -1,0 +1,95 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 715b6a9c-99a7-4856-9120-a66cc96c0230
+  bundle: session
+  default_langcode: en
+  depends:
+    63546f0e-4fe2-4875-8dda-16da720bd04f: node
+    6ffe94f5-4a48-4a60-ae3d-d35b3ef0f9ef: taxonomy_term
+    cefa8ac7-5bd7-43d8-9203-78ccd0c63cda: node
+    db7200ca-72b5-42eb-b37d-1230340c00a1: taxonomy_term
+    946def9e-4947-4b3e-801c-bbd8306fd222: taxonomy_term
+    5c7ce4dd-bce4-4d39-b5e5-131c889e484a: taxonomy_term
+    1600240a-ff64-4b64-9aed-80e74c5c8a72: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Decoupled Drupal with Next.js'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /conferences/drupalconf-2026/schedule/decoupled-drupal-nextjs
+      langcode: en
+  body:
+    -
+      value: '<p>A walkthrough of building a production-ready decoupled site with Drupal as the backend and Next.js as the frontend, including caching strategies and deploy pipelines.</p>'
+      format: basic_html
+      summary: ''
+  field_conference:
+    -
+      entity: 63546f0e-4fe2-4875-8dda-16da720bd04f
+  field_end_time:
+    -
+      value: '2026-10-14T11:45:00'
+  field_featured:
+    -
+      value: false
+  field_max_seats:
+    -
+      value: 200
+  field_room:
+    -
+      value: 'Room B'
+  field_session_status:
+    -
+      value: scheduled
+  field_session_type:
+    -
+      value: talk
+  field_skill_level:
+    -
+      entity: 6ffe94f5-4a48-4a60-ae3d-d35b3ef0f9ef
+  field_slides_url:
+    -
+      uri: 'https://slides.example/decoupled-nextjs'
+      title: null
+      options: {  }
+  field_speakers:
+    -
+      entity: cefa8ac7-5bd7-43d8-9203-78ccd0c63cda
+  field_start_time:
+    -
+      value: '2026-10-14T11:00:00'
+  field_topics:
+    -
+      entity: db7200ca-72b5-42eb-b37d-1230340c00a1
+    -
+      entity: 946def9e-4947-4b3e-801c-bbd8306fd222
+    -
+      entity: 5c7ce4dd-bce4-4d39-b5e5-131c889e484a
+  field_track:
+    -
+      entity: 1600240a-ff64-4b64-9aed-80e74c5c8a72
+  field_video_url:
+    -
+      uri: 'https://video.example/decoupled-nextjs'
+      title: null
+      options: {  }

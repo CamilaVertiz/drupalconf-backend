@@ -1,0 +1,79 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 8773a6da-b10b-48bf-8aa2-d34f72ea56da
+  bundle: session
+  default_langcode: en
+  depends:
+    caea0e2f-b7f3-4ecb-9e0e-718e580376a8: node
+    c81fadb0-7346-445e-93f3-087f7bbbfde2: taxonomy_term
+    c05f9e05-c22f-4909-a65b-2aa9f4bb0e40: node
+    c01b7a00-58b1-44e1-96ce-9a9685fca9c3: taxonomy_term
+    690eab4c-eda0-4115-9e7a-2c6a2b6dd5f7: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Drupal Performance Tuning in Production'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /conferences/drupalconnect-spring-2026/schedule/drupal-performance-tuning-production
+      langcode: en
+  body:
+    -
+      value: '<p>Caching layers, render caching, and database tuning for high-traffic Drupal sites.</p>'
+      format: basic_html
+      summary: ''
+  field_conference:
+    -
+      entity: caea0e2f-b7f3-4ecb-9e0e-718e580376a8
+  field_end_time:
+    -
+      value: '2026-04-25T11:45:00'
+  field_featured:
+    -
+      value: false
+  field_max_seats:
+    -
+      value: 80
+  field_room:
+    -
+      value: 'Room B'
+  field_session_status:
+    -
+      value: scheduled
+  field_session_type:
+    -
+      value: talk
+  field_skill_level:
+    -
+      entity: c81fadb0-7346-445e-93f3-087f7bbbfde2
+  field_speakers:
+    -
+      entity: c05f9e05-c22f-4909-a65b-2aa9f4bb0e40
+  field_start_time:
+    -
+      value: '2026-04-25T11:00:00'
+  field_topics:
+    -
+      entity: c01b7a00-58b1-44e1-96ce-9a9685fca9c3
+  field_track:
+    -
+      entity: 690eab4c-eda0-4115-9e7a-2c6a2b6dd5f7

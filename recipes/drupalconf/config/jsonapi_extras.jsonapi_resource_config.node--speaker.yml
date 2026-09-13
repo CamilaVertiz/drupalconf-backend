@@ -1,0 +1,181 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.speaker
+  module:
+    - jsonapi_extras
+    - node
+id: node--speaker
+disabled: null
+path: node/speaker
+resourceType: node--speaker
+resourceFields:
+  nid:
+    disabled: true
+    fieldName: nid
+    publicName: nid
+    enhancer:
+      id: ''
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  vid:
+    disabled: true
+    fieldName: vid
+    publicName: vid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: true
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  type:
+    disabled: true
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+  title:
+    disabled: false
+    fieldName: title
+    publicName: title
+    enhancer:
+      id: ''
+  status:
+    disabled: false
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+  uid:
+    disabled: true
+    fieldName: uid
+    publicName: uid
+    enhancer:
+      id: ''
+  created:
+    disabled: false
+    fieldName: created
+    publicName: created
+    enhancer:
+      id: ''
+  changed:
+    disabled: false
+    fieldName: changed
+    publicName: changed
+    enhancer:
+      id: ''
+  promote:
+    disabled: true
+    fieldName: promote
+    publicName: promote
+    enhancer:
+      id: ''
+  sticky:
+    disabled: true
+    fieldName: sticky
+    publicName: sticky
+    enhancer:
+      id: ''
+  default_langcode:
+    disabled: true
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''
+  revision_default:
+    disabled: true
+    fieldName: revision_default
+    publicName: revision_default
+    enhancer:
+      id: ''
+  revision_translation_affected:
+    disabled: true
+    fieldName: revision_translation_affected
+    publicName: revision_translation_affected
+    enhancer:
+      id: ''
+  path:
+    disabled: false
+    fieldName: path
+    publicName: path
+    enhancer:
+      id: ''
+  menu_link:
+    disabled: true
+    fieldName: menu_link
+    publicName: menu_link
+    enhancer:
+      id: ''
+  content_translation_source:
+    disabled: true
+    fieldName: content_translation_source
+    publicName: content_translation_source
+    enhancer:
+      id: ''
+  content_translation_outdated:
+    disabled: true
+    fieldName: content_translation_outdated
+    publicName: content_translation_outdated
+    enhancer:
+      id: ''
+  body:
+    disabled: false
+    fieldName: body
+    publicName: body
+    enhancer:
+      id: ''
+  field_company:
+    disabled: false
+    fieldName: field_company
+    publicName: company
+    enhancer:
+      id: ''
+  field_country:
+    disabled: false
+    fieldName: field_country
+    publicName: country
+    enhancer:
+      id: ''
+  field_featured:
+    disabled: false
+    fieldName: field_featured
+    publicName: featured
+    enhancer:
+      id: ''
+  field_job_title:
+    disabled: false
+    fieldName: field_job_title
+    publicName: job_title
+    enhancer:
+      id: ''
+  field_photo:
+    disabled: false
+    fieldName: field_photo
+    publicName: photo
+    enhancer:
+      id: ''
+  field_social_links:
+    disabled: false
+    fieldName: field_social_links
+    publicName: social_links
+    enhancer:
+      id: ''
+  field_speaker_email:
+    disabled: true
+    fieldName: field_speaker_email
+    publicName: speaker_email
+    enhancer:
+      id: ''
+  field_website:
+    disabled: false
+    fieldName: field_website
+    publicName: website
+    enhancer:
+      id: ''

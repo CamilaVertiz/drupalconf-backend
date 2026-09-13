@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: cefa8ac7-5bd7-43d8-9203-78ccd0c63cda
+  bundle: speaker
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Marcus Chen'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /speakers/marcus-chen
+      langcode: en
+  body:
+    -
+      value: '<p>Marcus specializes in decoupled Drupal frontends and has been speaking on the topic since 2019.</p>'
+      format: basic_html
+      summary: ''
+  field_company:
+    -
+      value: 'Headless Co.'
+  field_country:
+    -
+      value: CA
+  field_featured:
+    -
+      value: false
+  field_job_title:
+    -
+      value: 'Front-end Architect'
+  field_social_links:
+    -
+      uri: 'https://github.com/marcuschen'
+      title: GitHub
+      options: {  }
+    -
+      uri: 'https://linkedin.com/in/marcuschen'
+      title: LinkedIn
+      options: {  }
+  field_speaker_email:
+    -
+      value: marcus@example.com
+  field_website:
+    -
+      uri: 'https://marcuschen.dev'
+      title: null
+      options: {  }

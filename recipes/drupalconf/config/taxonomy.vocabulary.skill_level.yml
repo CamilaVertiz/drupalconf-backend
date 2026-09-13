@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Skill Level'
+vid: skill_level
+description: 'Session skill levels: beginner, intermediate, advanced.'
+weight: 0
+new_revision: false

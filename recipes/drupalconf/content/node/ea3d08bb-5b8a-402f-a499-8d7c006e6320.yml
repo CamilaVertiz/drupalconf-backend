@@ -1,0 +1,65 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ea3d08bb-5b8a-402f-a499-8d7c006e6320
+  bundle: venue
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Riverfront Convention Center'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  body:
+    -
+      value: '<p>Riverside complex with three keynote halls, twelve breakout rooms, and a 2,000-seat auditorium overlooking the river.</p>'
+      format: basic_html
+      summary: ''
+  field_accessibility:
+    -
+      value: 'Step-free access on all floors. Accessible restrooms on every level. ASL interpreters available on request.'
+  field_capacity:
+    -
+      value: 5000
+  field_city:
+    -
+      value: Portland
+  field_country:
+    -
+      value: US
+  field_map_url:
+    -
+      uri: 'https://maps.google.com/?q=500+Front+Ave+Portland'
+      title: null
+      options: {  }
+  field_phone:
+    -
+      value: '+1 503 555 0142'
+  field_street_address:
+    -
+      value: '500 Front Avenue'
+  field_website:
+    -
+      uri: 'https://riverfrontcc.example'
+      title: 'Riverfront CC'
+      options: {  }

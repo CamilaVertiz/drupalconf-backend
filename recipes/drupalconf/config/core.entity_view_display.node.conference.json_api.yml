@@ -1,0 +1,131 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.json_api
+    - field.field.node.conference.body
+    - field.field.node.conference.field_conference_status
+    - field.field.node.conference.field_date_end
+    - field.field.node.conference.field_date_start
+    - field.field.node.conference.field_featured
+    - field.field.node.conference.field_hero_image
+    - field.field.node.conference.field_logo
+    - field.field.node.conference.field_max_attendees
+    - field.field.node.conference.field_social_links
+    - field.field.node.conference.field_tagline
+    - field.field.node.conference.field_venue
+    - field.field.node.conference.field_website
+    - node.type.conference
+  module:
+    - datetime
+    - link
+    - options
+    - text
+    - user
+id: node.conference.json_api
+targetEntityType: node
+bundle: conference
+mode: json_api
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_conference_status:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_date_end:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_date_start:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_hero_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_logo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_max_attendees:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_social_links:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 0
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_tagline:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_venue:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_website:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 0
+      url_only: true
+      url_plain: true
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 9
+    region: content
+hidden:
+  field_featured: true
+  links: true

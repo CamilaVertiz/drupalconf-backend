@@ -1,0 +1,18 @@
+drupalconf_api.contact_form_submit:
+  path: '/api/forms/contact/submit'
+  defaults:
+    _controller: '\Drupal\drupalconf_api\Controller\ContactFormController::submit'
+  requirements:
+    # Public endpoint; the controller checks origin, honeypot, and flood limits.
+    _access: 'TRUE'
+  methods: [POST]
+  options:
+    no_cache: TRUE
+
+drupalconf_api.settings_form:
+  path: '/admin/config/services/drupalconf-api'
+  defaults:
+    _form: '\Drupal\drupalconf_api\Form\SettingsForm'
+    _title: 'DrupalConf API settings'
+  requirements:
+    _permission: 'administer site configuration'

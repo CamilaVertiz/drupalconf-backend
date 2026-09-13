@@ -1,0 +1,13 @@
+drupalconf_api.settings:
+  type: config_object
+  label: 'DrupalConf API settings'
+  mapping:
+    contact_recipient:
+      type: email
+      label: 'Contact form recipient email address'
+    allowed_origins:
+      type: sequence
+      label: 'Allowed origins for the contact form'
+      sequence:
+        type: string
+        label: 'Origin'

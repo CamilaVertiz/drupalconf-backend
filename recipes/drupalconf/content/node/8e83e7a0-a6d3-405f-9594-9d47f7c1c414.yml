@@ -1,0 +1,79 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 8e83e7a0-a6d3-405f-9594-9d47f7c1c414
+  bundle: session
+  default_langcode: en
+  depends:
+    63546f0e-4fe2-4875-8dda-16da720bd04f: node
+    6ffe94f5-4a48-4a60-ae3d-d35b3ef0f9ef: taxonomy_term
+    cefa8ac7-5bd7-43d8-9203-78ccd0c63cda: node
+    5c7ce4dd-bce4-4d39-b5e5-131c889e484a: taxonomy_term
+    1600240a-ff64-4b64-9aed-80e74c5c8a72: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Building a Design System in Drupal'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /conferences/drupalconf-2026/schedule/building-design-system-drupal
+      langcode: en
+  body:
+    -
+      value: '<p>A practical, example-driven session on building a design system in drupal.</p>'
+      format: basic_html
+      summary: ''
+  field_conference:
+    -
+      entity: 63546f0e-4fe2-4875-8dda-16da720bd04f
+  field_end_time:
+    -
+      value: '2026-10-14T13:45:00'
+  field_featured:
+    -
+      value: false
+  field_max_seats:
+    -
+      value: 100
+  field_room:
+    -
+      value: 'Room B'
+  field_session_status:
+    -
+      value: scheduled
+  field_session_type:
+    -
+      value: talk
+  field_skill_level:
+    -
+      entity: 6ffe94f5-4a48-4a60-ae3d-d35b3ef0f9ef
+  field_speakers:
+    -
+      entity: cefa8ac7-5bd7-43d8-9203-78ccd0c63cda
+  field_start_time:
+    -
+      value: '2026-10-14T13:00:00'
+  field_topics:
+    -
+      entity: 5c7ce4dd-bce4-4d39-b5e5-131c889e484a
+  field_track:
+    -
+      entity: 1600240a-ff64-4b64-9aed-80e74c5c8a72

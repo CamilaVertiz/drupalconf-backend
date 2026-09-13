@@ -1,0 +1,79 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 5c61eaf5-f17a-4ea1-9d16-a52be1ef0312
+  bundle: session
+  default_langcode: en
+  depends:
+    caea0e2f-b7f3-4ecb-9e0e-718e580376a8: node
+    c81fadb0-7346-445e-93f3-087f7bbbfde2: taxonomy_term
+    03acd51a-ff43-4b85-b297-6ed1a369dad9: node
+    5c7ce4dd-bce4-4d39-b5e5-131c889e484a: taxonomy_term
+    1600240a-ff64-4b64-9aed-80e74c5c8a72: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'State Management in Decoupled Drupal'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /conferences/drupalconnect-spring-2026/schedule/state-management-decoupled-drupal
+      langcode: en
+  body:
+    -
+      value: '<p>A practical, example-driven session on state management in decoupled drupal.</p>'
+      format: basic_html
+      summary: ''
+  field_conference:
+    -
+      entity: caea0e2f-b7f3-4ecb-9e0e-718e580376a8
+  field_end_time:
+    -
+      value: '2026-04-25T13:45:00'
+  field_featured:
+    -
+      value: false
+  field_max_seats:
+    -
+      value: 100
+  field_room:
+    -
+      value: 'Room A'
+  field_session_status:
+    -
+      value: scheduled
+  field_session_type:
+    -
+      value: talk
+  field_skill_level:
+    -
+      entity: c81fadb0-7346-445e-93f3-087f7bbbfde2
+  field_speakers:
+    -
+      entity: 03acd51a-ff43-4b85-b297-6ed1a369dad9
+  field_start_time:
+    -
+      value: '2026-04-25T13:00:00'
+  field_topics:
+    -
+      entity: 5c7ce4dd-bce4-4d39-b5e5-131c889e484a
+  field_track:
+    -
+      entity: 1600240a-ff64-4b64-9aed-80e74c5c8a72

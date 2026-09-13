@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.json_api
+    - field.field.node.basic_page.field_content
+    - node.type.basic_page
+  module:
+    - user
+id: node.basic_page.json_api
+targetEntityType: node
+bundle: basic_page
+mode: json_api
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_content: true

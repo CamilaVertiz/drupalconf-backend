@@ -1,0 +1,70 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c05f9e05-c22f-4909-a65b-2aa9f4bb0e40
+  bundle: speaker
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ana Pérez'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /speakers/ana-perez
+      langcode: en
+  body:
+    -
+      value: '<p>Ana has been building Drupal sites for over a decade and currently leads the platform team at Acme Digital.</p>'
+      format: basic_html
+      summary: ''
+  field_company:
+    -
+      value: 'Acme Digital'
+  field_country:
+    -
+      value: US
+  field_featured:
+    -
+      value: true
+  field_job_title:
+    -
+      value: 'Senior Drupal Engineer'
+  field_social_links:
+    -
+      uri: 'https://github.com/anaperez'
+      title: GitHub
+      options: {  }
+    -
+      uri: 'https://linkedin.com/in/anaperez'
+      title: LinkedIn
+      options: {  }
+    -
+      uri: 'https://x.com/anaperez'
+      title: X
+      options: {  }
+  field_speaker_email:
+    -
+      value: ana@example.com
+  field_website:
+    -
+      uri: 'https://anaperez.dev'
+      title: null
+      options: {  }

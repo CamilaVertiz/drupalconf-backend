@@ -1,0 +1,79 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c15e059c-cd6a-4393-8cb5-1dc0e9710151
+  bundle: session
+  default_langcode: en
+  depends:
+    54c69ec8-012c-4b56-88f3-365e91225e6c: node
+    6ad3ec3d-ba05-414e-b7ed-2ee02d684ff6: taxonomy_term
+    cefa8ac7-5bd7-43d8-9203-78ccd0c63cda: node
+    e80177fa-3246-4067-bc38-67914e3e36fb: taxonomy_term
+    e497c6dc-4451-4271-9deb-915bde4049b8: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Automated Testing for Drupal Modules'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /conferences/drupalconf-2025/schedule/automated-testing-drupal-modules
+      langcode: en
+  body:
+    -
+      value: '<p>Writing PHPUnit kernel and functional tests, and wiring them into CI.</p>'
+      format: basic_html
+      summary: ''
+  field_conference:
+    -
+      entity: 54c69ec8-012c-4b56-88f3-365e91225e6c
+  field_end_time:
+    -
+      value: '2025-09-18T14:45:00'
+  field_featured:
+    -
+      value: false
+  field_max_seats:
+    -
+      value: 40
+  field_room:
+    -
+      value: 'Room C'
+  field_session_status:
+    -
+      value: scheduled
+  field_session_type:
+    -
+      value: workshop
+  field_skill_level:
+    -
+      entity: 6ad3ec3d-ba05-414e-b7ed-2ee02d684ff6
+  field_speakers:
+    -
+      entity: cefa8ac7-5bd7-43d8-9203-78ccd0c63cda
+  field_start_time:
+    -
+      value: '2025-09-18T14:00:00'
+  field_topics:
+    -
+      entity: e80177fa-3246-4067-bc38-67914e3e36fb
+  field_track:
+    -
+      entity: e497c6dc-4451-4271-9deb-915bde4049b8

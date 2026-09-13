@@ -1,0 +1,217 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.session
+  module:
+    - jsonapi_extras
+    - node
+id: node--session
+disabled: null
+path: node/session
+resourceType: node--session
+resourceFields:
+  nid:
+    disabled: true
+    fieldName: nid
+    publicName: nid
+    enhancer:
+      id: ''
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  vid:
+    disabled: true
+    fieldName: vid
+    publicName: vid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: true
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  type:
+    disabled: true
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+  title:
+    disabled: false
+    fieldName: title
+    publicName: title
+    enhancer:
+      id: ''
+  status:
+    disabled: false
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+  uid:
+    disabled: true
+    fieldName: uid
+    publicName: uid
+    enhancer:
+      id: ''
+  created:
+    disabled: false
+    fieldName: created
+    publicName: created
+    enhancer:
+      id: ''
+  changed:
+    disabled: false
+    fieldName: changed
+    publicName: changed
+    enhancer:
+      id: ''
+  promote:
+    disabled: true
+    fieldName: promote
+    publicName: promote
+    enhancer:
+      id: ''
+  sticky:
+    disabled: true
+    fieldName: sticky
+    publicName: sticky
+    enhancer:
+      id: ''
+  default_langcode:
+    disabled: true
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''
+  revision_default:
+    disabled: true
+    fieldName: revision_default
+    publicName: revision_default
+    enhancer:
+      id: ''
+  revision_translation_affected:
+    disabled: true
+    fieldName: revision_translation_affected
+    publicName: revision_translation_affected
+    enhancer:
+      id: ''
+  path:
+    disabled: false
+    fieldName: path
+    publicName: path
+    enhancer:
+      id: ''
+  menu_link:
+    disabled: true
+    fieldName: menu_link
+    publicName: menu_link
+    enhancer:
+      id: ''
+  content_translation_source:
+    disabled: true
+    fieldName: content_translation_source
+    publicName: content_translation_source
+    enhancer:
+      id: ''
+  content_translation_outdated:
+    disabled: true
+    fieldName: content_translation_outdated
+    publicName: content_translation_outdated
+    enhancer:
+      id: ''
+  body:
+    disabled: false
+    fieldName: body
+    publicName: body
+    enhancer:
+      id: ''
+  field_conference:
+    disabled: false
+    fieldName: field_conference
+    publicName: conference
+    enhancer:
+      id: ''
+  field_end_time:
+    disabled: false
+    fieldName: field_end_time
+    publicName: end_time
+    enhancer:
+      id: ''
+  field_featured:
+    disabled: false
+    fieldName: field_featured
+    publicName: featured
+    enhancer:
+      id: ''
+  field_max_seats:
+    disabled: false
+    fieldName: field_max_seats
+    publicName: max_seats
+    enhancer:
+      id: ''
+  field_room:
+    disabled: false
+    fieldName: field_room
+    publicName: room
+    enhancer:
+      id: ''
+  field_session_status:
+    disabled: false
+    fieldName: field_session_status
+    publicName: session_status
+    enhancer:
+      id: ''
+  field_session_type:
+    disabled: false
+    fieldName: field_session_type
+    publicName: session_type
+    enhancer:
+      id: ''
+  field_skill_level:
+    disabled: false
+    fieldName: field_skill_level
+    publicName: skill_level
+    enhancer:
+      id: ''
+  field_slides_url:
+    disabled: false
+    fieldName: field_slides_url
+    publicName: slides_url
+    enhancer:
+      id: ''
+  field_speakers:
+    disabled: false
+    fieldName: field_speakers
+    publicName: speakers
+    enhancer:
+      id: ''
+  field_start_time:
+    disabled: false
+    fieldName: field_start_time
+    publicName: start_time
+    enhancer:
+      id: ''
+  field_topics:
+    disabled: false
+    fieldName: field_topics
+    publicName: topics
+    enhancer:
+      id: ''
+  field_track:
+    disabled: false
+    fieldName: field_track
+    publicName: track
+    enhancer:
+      id: ''
+  field_video_url:
+    disabled: false
+    fieldName: field_video_url
+    publicName: video_url
+    enhancer:
+      id: ''

@@ -9,8 +9,6 @@ set -eu
 # Allow aliases
 shopt -s expand_aliases
 
-# Functions
-
 UPDATE_PROJECT=1
 UPDATE_BACKEND=0
 UPDATE_FRONTEND=0
@@ -89,28 +87,16 @@ else
     echo '* Skipping *'
 fi
 
-echo '# Update Drupal conf and database #############################################'
+echo '# Rebuild Drupal from the DrupalConf recipe ##################################'
 if [ "$UPDATE_DRUPALCONF" == "1" ]; then
-    echo "## Switch on maintenance mode ##"
-    drush sset system.maintenance_mode 1 --input-format=integer
+    echo "## Fresh install ##"
+    drush site:install minimal -y
 
-    echo "## Database updates ##"
-    drush updb -y
-
-    echo "## Import configuration ##"
-    drush cim -y
-
-    # Let's disable this for now, as we are not using translations yet.
-    # but we might use it in the future.
-    # echo "## Check for and import translations ##"
-    # drush locale:check
-    # drush locale:update
+    echo "## Apply the DrupalConf recipe ##"
+    drush recipe ../recipes/drupalconf -y
 
     echo "## Cache rebuild ##"
     drush cr
-
-    echo "## Switch off maintenance mode ##"
-    drush sset system.maintenance_mode 0 --input-format=integer
 
     echo "## Generate login link ##"
     drush uli

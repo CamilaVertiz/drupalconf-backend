@@ -1,0 +1,79 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 6f6f2411-6d40-4a12-83cb-57c50ea2dd9c
+  bundle: session
+  default_langcode: en
+  depends:
+    54c69ec8-012c-4b56-88f3-365e91225e6c: node
+    6ffe94f5-4a48-4a60-ae3d-d35b3ef0f9ef: taxonomy_term
+    c05f9e05-c22f-4909-a65b-2aa9f4bb0e40: node
+    946def9e-4947-4b3e-801c-bbd8306fd222: taxonomy_term
+    b4c050c0-dcaa-4faf-b5e4-f78b85da97d0: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'REST to JSON:API Migration'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /conferences/drupalconf-2025/schedule/rest-jsonapi-migration
+      langcode: en
+  body:
+    -
+      value: '<p>A practical, example-driven session on rest to json:api migration.</p>'
+      format: basic_html
+      summary: ''
+  field_conference:
+    -
+      entity: 54c69ec8-012c-4b56-88f3-365e91225e6c
+  field_end_time:
+    -
+      value: '2025-09-18T11:45:00'
+  field_featured:
+    -
+      value: false
+  field_max_seats:
+    -
+      value: 100
+  field_room:
+    -
+      value: 'Room A'
+  field_session_status:
+    -
+      value: scheduled
+  field_session_type:
+    -
+      value: talk
+  field_skill_level:
+    -
+      entity: 6ffe94f5-4a48-4a60-ae3d-d35b3ef0f9ef
+  field_speakers:
+    -
+      entity: c05f9e05-c22f-4909-a65b-2aa9f4bb0e40
+  field_start_time:
+    -
+      value: '2025-09-18T11:00:00'
+  field_topics:
+    -
+      entity: 946def9e-4947-4b3e-801c-bbd8306fd222
+  field_track:
+    -
+      entity: b4c050c0-dcaa-4faf-b5e4-f78b85da97d0

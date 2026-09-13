@@ -1,0 +1,5 @@
+drupalconf_api.settings_form:
+  title: 'DrupalConf API'
+  description: 'Configure the contact form recipient and allowed origins.'
+  parent: system.admin_config_services
+  route_name: drupalconf_api.settings_form

@@ -1,0 +1,74 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 63546f0e-4fe2-4875-8dda-16da720bd04f
+  bundle: conference
+  default_langcode: en
+  depends:
+    ea3d08bb-5b8a-402f-a499-8d7c006e6320: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'DrupalConf 2026'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /conferences/drupalconf-2026
+      langcode: en
+  body:
+    -
+      value: '<p>The flagship Drupal community gathering on the West Coast — three days of talks, workshops, and code sprints.</p>'
+      format: basic_html
+      summary: ''
+  field_conference_status:
+    -
+      value: upcoming
+  field_date_end:
+    -
+      value: '2026-10-16T18:00:00'
+  field_date_start:
+    -
+      value: '2026-10-14T09:00:00'
+  field_featured:
+    -
+      value: true
+  field_max_attendees:
+    -
+      value: 1500
+  field_social_links:
+    -
+      uri: 'https://twitter.com/drupalconf'
+      title: X
+      options: {  }
+    -
+      uri: 'https://mastodon.social/@drupalconf'
+      title: Mastodon
+      options: {  }
+  field_tagline:
+    -
+      value: 'The Drupal community gathering on the West Coast.'
+  field_venue:
+    -
+      entity: ea3d08bb-5b8a-402f-a499-8d7c006e6320
+  field_website:
+    -
+      uri: 'https://2026.drupalconf.example'
+      title: 'Conference site'
+      options: {  }

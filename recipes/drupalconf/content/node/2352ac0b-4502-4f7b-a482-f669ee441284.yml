@@ -1,0 +1,79 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 2352ac0b-4502-4f7b-a482-f669ee441284
+  bundle: session
+  default_langcode: en
+  depends:
+    caea0e2f-b7f3-4ecb-9e0e-718e580376a8: node
+    6ad3ec3d-ba05-414e-b7ed-2ee02d684ff6: taxonomy_term
+    8ddd602e-bfa9-4365-b9f1-aa4384ac086c: node
+    3a964f5a-5f05-4be4-841c-968f1a2b0e9d: taxonomy_term
+    37cfe1d7-d8a3-4f77-96dc-f093f691a1e1: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Composer Workflows for Teams'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /conferences/drupalconnect-spring-2026/schedule/composer-workflows-teams
+      langcode: en
+  body:
+    -
+      value: '<p>A practical, example-driven session on composer workflows for teams.</p>'
+      format: basic_html
+      summary: ''
+  field_conference:
+    -
+      entity: caea0e2f-b7f3-4ecb-9e0e-718e580376a8
+  field_end_time:
+    -
+      value: '2026-04-25T14:45:00'
+  field_featured:
+    -
+      value: false
+  field_max_seats:
+    -
+      value: 125
+  field_room:
+    -
+      value: 'Room B'
+  field_session_status:
+    -
+      value: scheduled
+  field_session_type:
+    -
+      value: workshop
+  field_skill_level:
+    -
+      entity: 6ad3ec3d-ba05-414e-b7ed-2ee02d684ff6
+  field_speakers:
+    -
+      entity: 8ddd602e-bfa9-4365-b9f1-aa4384ac086c
+  field_start_time:
+    -
+      value: '2026-04-25T14:00:00'
+  field_topics:
+    -
+      entity: 3a964f5a-5f05-4be4-841c-968f1a2b0e9d
+  field_track:
+    -
+      entity: 37cfe1d7-d8a3-4f77-96dc-f093f691a1e1

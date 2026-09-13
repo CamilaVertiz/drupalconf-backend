@@ -1,0 +1,22 @@
+# The mglaman/phpstan-drupal, phpstan-deprecation-rules and phpstan-phpunit
+# extensions are auto-registered via phpstan/extension-installer.
+parameters:
+  level: 6
+  paths:
+    - web/modules/custom
+    - web/themes/custom
+  fileExtensions:
+    - php
+    - module
+    - inc
+    - install
+    - profile
+    - theme
+  ignoreErrors:
+    # Form API arrays are untyped in core's method signatures.
+    -
+      identifier: missingType.iterableValue
+      path: web/modules/custom/*/src/Form/*.php
+  excludePaths:
+    - */node_modules/*
+    - */vendor/*

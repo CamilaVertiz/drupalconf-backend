@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for DrupalConf API.
+ */
+
+declare(strict_types=1);
+
+/**
+ * Implements hook_mail().
+ *
+ * @phpstan-param array<string, mixed> $message
+ * @phpstan-param array<string, mixed> $params
+ */
+function drupalconf_api_mail(string $key, array &$message, array $params): void {
+  if ($key === 'contact_form') {
+    $message['subject'] = '[Contact form] ' . $params['subject'];
+    $message['body'][] = $params['message'];
+  }
+}

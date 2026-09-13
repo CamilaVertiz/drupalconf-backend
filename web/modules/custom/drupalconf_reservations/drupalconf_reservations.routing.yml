@@ -1,0 +1,21 @@
+drupalconf_reservations.create:
+  path: '/api/reservations'
+  defaults:
+    _controller: '\Drupal\drupalconf_reservations\Controller\ReservationController::createReservation'
+  requirements:
+    # Public endpoint; the controller checks honeypot, flood, and capacity limits.
+    _access: 'TRUE'
+  methods: [POST]
+  options:
+    no_cache: TRUE
+
+drupalconf_reservations.lookup:
+  path: '/api/reservations/lookup'
+  defaults:
+    _controller: '\Drupal\drupalconf_reservations\Controller\ReservationController::lookup'
+  requirements:
+    # Public endpoint; only reveals whether reservations exist.
+    _access: 'TRUE'
+  methods: [POST]
+  options:
+    no_cache: TRUE

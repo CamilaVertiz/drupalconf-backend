@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 03acd51a-ff43-4b85-b297-6ed1a369dad9
+  bundle: speaker
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Sofia Rossi'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /speakers/sofia-rossi
+      langcode: en
+  body:
+    -
+      value: '<p>Sofia is an accessibility specialist at Lullabot and a frequent contributor to the Drupal a11y initiative.</p>'
+      format: basic_html
+      summary: ''
+  field_company:
+    -
+      value: Lullabot
+  field_country:
+    -
+      value: IT
+  field_featured:
+    -
+      value: true
+  field_job_title:
+    -
+      value: 'Accessibility Specialist'
+  field_social_links:
+    -
+      uri: 'https://linkedin.com/in/sofiarossi'
+      title: LinkedIn
+      options: {  }
+    -
+      uri: 'https://x.com/sofiarossi'
+      title: X
+      options: {  }
+  field_speaker_email:
+    -
+      value: sofia@example.com
+  field_website:
+    -
+      uri: 'https://sofiarossi.dev'
+      title: null
+      options: {  }

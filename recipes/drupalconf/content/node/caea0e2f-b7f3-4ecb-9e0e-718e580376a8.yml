@@ -1,0 +1,70 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: caea0e2f-b7f3-4ecb-9e0e-718e580376a8
+  bundle: conference
+  default_langcode: en
+  depends:
+    ea3d08bb-5b8a-402f-a499-8d7c006e6320: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'DrupalConnect Spring 2026'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /conferences/drupalconnect-spring-2026
+      langcode: en
+  body:
+    -
+      value: '<p>A regional gathering focused on hands-on workshops and contributor sprints.</p>'
+      format: basic_html
+      summary: ''
+  field_conference_status:
+    -
+      value: active
+  field_date_end:
+    -
+      value: '2026-04-27T17:30:00'
+  field_date_start:
+    -
+      value: '2026-04-25T09:00:00'
+  field_featured:
+    -
+      value: false
+  field_max_attendees:
+    -
+      value: 600
+  field_social_links:
+    -
+      uri: 'https://twitter.com/drupalconnect'
+      title: X
+      options: {  }
+  field_tagline:
+    -
+      value: 'Spring sprints and workshops, hands-on Drupal.'
+  field_venue:
+    -
+      entity: ea3d08bb-5b8a-402f-a499-8d7c006e6320
+  field_website:
+    -
+      uri: 'https://spring.drupalconnect.example'
+      title: 'DrupalConnect Spring'
+      options: {  }

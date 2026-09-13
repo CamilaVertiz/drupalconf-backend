@@ -1,0 +1,79 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 769002be-d9c7-4f17-a472-1c72be3a33e7
+  bundle: session
+  default_langcode: en
+  depends:
+    63546f0e-4fe2-4875-8dda-16da720bd04f: node
+    c81fadb0-7346-445e-93f3-087f7bbbfde2: taxonomy_term
+    8ddd602e-bfa9-4365-b9f1-aa4384ac086c: node
+    c01b7a00-58b1-44e1-96ce-9a9685fca9c3: taxonomy_term
+    b4c050c0-dcaa-4faf-b5e4-f78b85da97d0: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Scaling the Database Layer'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /conferences/drupalconf-2026/schedule/scaling-database-layer
+      langcode: en
+  body:
+    -
+      value: '<p>A practical, example-driven session on scaling the database layer.</p>'
+      format: basic_html
+      summary: ''
+  field_conference:
+    -
+      entity: 63546f0e-4fe2-4875-8dda-16da720bd04f
+  field_end_time:
+    -
+      value: '2026-10-14T14:45:00'
+  field_featured:
+    -
+      value: false
+  field_max_seats:
+    -
+      value: 125
+  field_room:
+    -
+      value: 'Main Hall'
+  field_session_status:
+    -
+      value: scheduled
+  field_session_type:
+    -
+      value: talk
+  field_skill_level:
+    -
+      entity: c81fadb0-7346-445e-93f3-087f7bbbfde2
+  field_speakers:
+    -
+      entity: 8ddd602e-bfa9-4365-b9f1-aa4384ac086c
+  field_start_time:
+    -
+      value: '2026-10-14T14:00:00'
+  field_topics:
+    -
+      entity: c01b7a00-58b1-44e1-96ce-9a9685fca9c3
+  field_track:
+    -
+      entity: b4c050c0-dcaa-4faf-b5e4-f78b85da97d0

@@ -1,0 +1,79 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f18f7941-9661-449e-8cd7-2e8fe3bb89d1
+  bundle: session
+  default_langcode: en
+  depends:
+    caea0e2f-b7f3-4ecb-9e0e-718e580376a8: node
+    6ffe94f5-4a48-4a60-ae3d-d35b3ef0f9ef: taxonomy_term
+    03acd51a-ff43-4b85-b297-6ed1a369dad9: node
+    2d34ce55-09f3-4e2e-a7a5-ca5f2eb9f5c1: taxonomy_term
+    1600240a-ff64-4b64-9aed-80e74c5c8a72: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Accessible Components from the Start'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /conferences/drupalconnect-spring-2026/schedule/accessible-components-start
+      langcode: en
+  body:
+    -
+      value: '<p>A practical, example-driven session on accessible components from the start.</p>'
+      format: basic_html
+      summary: ''
+  field_conference:
+    -
+      entity: caea0e2f-b7f3-4ecb-9e0e-718e580376a8
+  field_end_time:
+    -
+      value: '2026-04-25T15:45:00'
+  field_featured:
+    -
+      value: false
+  field_max_seats:
+    -
+      value: 150
+  field_room:
+    -
+      value: 'Room A'
+  field_session_status:
+    -
+      value: scheduled
+  field_session_type:
+    -
+      value: talk
+  field_skill_level:
+    -
+      entity: 6ffe94f5-4a48-4a60-ae3d-d35b3ef0f9ef
+  field_speakers:
+    -
+      entity: 03acd51a-ff43-4b85-b297-6ed1a369dad9
+  field_start_time:
+    -
+      value: '2026-04-25T15:00:00'
+  field_topics:
+    -
+      entity: 2d34ce55-09f3-4e2e-a7a5-ca5f2eb9f5c1
+  field_track:
+    -
+      entity: 1600240a-ff64-4b64-9aed-80e74c5c8a72

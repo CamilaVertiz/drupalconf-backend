@@ -1,0 +1,8 @@
+langcode: en
+path_prefix: api/jsonapi
+include_count: true
+default_disabled: false
+generic_resource: false
+read_only: true
+disable_default_settings: false
+form_wrapper_id: jsonapi-extras-settings-form

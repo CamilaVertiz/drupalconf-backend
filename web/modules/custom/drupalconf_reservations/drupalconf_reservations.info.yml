@@ -1,0 +1,7 @@
+name: 'DrupalConf Reservations'
+type: module
+description: 'Provides email-only session reservations.'
+core_version_requirement: ^11
+package: DrupalConf
+dependencies:
+  - drupal:node

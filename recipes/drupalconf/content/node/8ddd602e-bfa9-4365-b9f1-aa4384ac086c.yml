@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 8ddd602e-bfa9-4365-b9f1-aa4384ac086c
+  bundle: speaker
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Priya Sharma'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /speakers/priya-sharma
+      langcode: en
+  body:
+    -
+      value: '<p>Priya leads platform engineering at Acquia and focuses on scaling Drupal for enterprise publishers.</p>'
+      format: basic_html
+      summary: ''
+  field_company:
+    -
+      value: Acquia
+  field_country:
+    -
+      value: IN
+  field_featured:
+    -
+      value: true
+  field_job_title:
+    -
+      value: 'Senior Backend Engineer'
+  field_social_links:
+    -
+      uri: 'https://github.com/priyasharma'
+      title: GitHub
+      options: {  }
+    -
+      uri: 'https://linkedin.com/in/priyasharma'
+      title: LinkedIn
+      options: {  }
+  field_speaker_email:
+    -
+      value: priya@example.com
+  field_website:
+    -
+      uri: 'https://priyasharma.dev'
+      title: null
+      options: {  }

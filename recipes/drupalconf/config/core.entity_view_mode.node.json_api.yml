@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.json_api
+label: 'JSON:API'
+description: null
+targetEntityType: node
+cache: true

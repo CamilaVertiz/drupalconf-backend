@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Topic
+vid: topic
+description: 'Session topics. Free-tagging vocabulary.'
+weight: 0
+new_revision: false

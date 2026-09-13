@@ -1,0 +1,79 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 89685c25-5ab6-4902-bf6d-6e5d13956b3f
+  bundle: session
+  default_langcode: en
+  depends:
+    caea0e2f-b7f3-4ecb-9e0e-718e580376a8: node
+    c81fadb0-7346-445e-93f3-087f7bbbfde2: taxonomy_term
+    46aeefe4-edc6-4092-9305-8bdb272329c6: node
+    c01b7a00-58b1-44e1-96ce-9a9685fca9c3: taxonomy_term
+    e497c6dc-4451-4271-9deb-915bde4049b8: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Zero-Downtime Deploys'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /conferences/drupalconnect-spring-2026/schedule/zero-downtime-deploys
+      langcode: en
+  body:
+    -
+      value: '<p>A practical, example-driven session on zero-downtime deploys.</p>'
+      format: basic_html
+      summary: ''
+  field_conference:
+    -
+      entity: caea0e2f-b7f3-4ecb-9e0e-718e580376a8
+  field_end_time:
+    -
+      value: '2026-04-25T16:45:00'
+  field_featured:
+    -
+      value: false
+  field_max_seats:
+    -
+      value: 175
+  field_room:
+    -
+      value: 'Room C'
+  field_session_status:
+    -
+      value: scheduled
+  field_session_type:
+    -
+      value: talk
+  field_skill_level:
+    -
+      entity: c81fadb0-7346-445e-93f3-087f7bbbfde2
+  field_speakers:
+    -
+      entity: 46aeefe4-edc6-4092-9305-8bdb272329c6
+  field_start_time:
+    -
+      value: '2026-04-25T16:00:00'
+  field_topics:
+    -
+      entity: c01b7a00-58b1-44e1-96ce-9a9685fca9c3
+  field_track:
+    -
+      entity: e497c6dc-4451-4271-9deb-915bde4049b8

@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_bundle
+field_name: field_bundle
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: conference
+      label: Conference
+    -
+      value: session
+      label: Session
+    -
+      value: blog
+      label: Blog
+    -
+      value: speaker
+      label: Speaker
+    -
+      value: sponsor
+      label: Sponsor
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

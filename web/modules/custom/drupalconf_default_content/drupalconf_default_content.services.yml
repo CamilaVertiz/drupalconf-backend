@@ -1,0 +1,6 @@
+services:
+  drupalconf_default_content.recipe_pages_subscriber:
+    class: Drupal\drupalconf_default_content\EventSubscriber\RecipePagesSubscriber
+    autowire: true
+    tags:
+      - { name: event_subscriber }

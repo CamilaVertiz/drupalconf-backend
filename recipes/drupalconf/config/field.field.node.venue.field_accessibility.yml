@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accessibility
+    - node.type.venue
+id: node.venue.field_accessibility
+field_name: field_accessibility
+entity_type: node
+bundle: venue
+label: 'Accessibility notes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

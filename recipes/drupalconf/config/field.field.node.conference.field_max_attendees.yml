@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_max_attendees
+    - node.type.conference
+id: node.conference.field_max_attendees
+field_name: field_max_attendees
+entity_type: node
+bundle: conference
+label: 'Max attendees'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

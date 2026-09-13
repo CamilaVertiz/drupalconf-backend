@@ -1,0 +1,4 @@
+administer reservations:
+  title: 'Administer reservations'
+  description: 'View and manage session reservations (includes attendee email addresses).'
+  restrict access: true

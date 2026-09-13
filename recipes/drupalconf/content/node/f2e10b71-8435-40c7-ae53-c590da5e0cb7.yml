@@ -1,0 +1,89 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f2e10b71-8435-40c7-ae53-c590da5e0cb7
+  bundle: session
+  default_langcode: en
+  depends:
+    63546f0e-4fe2-4875-8dda-16da720bd04f: node
+    6ad3ec3d-ba05-414e-b7ed-2ee02d684ff6: taxonomy_term
+    c05f9e05-c22f-4909-a65b-2aa9f4bb0e40: node
+    92bda70b-7642-4aa2-a3a7-b33d1438bc5c: taxonomy_term
+    2dd1ff2d-891c-4b21-81b1-e416ea63532f: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Welcome & State of Drupal'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /conferences/drupalconf-2026/schedule/welcome-state-drupal
+      langcode: en
+  body:
+    -
+      value: '<p>Opening keynote covering project updates, the year in review, and what is on the roadmap for the next major release.</p>'
+      format: basic_html
+      summary: ''
+  field_conference:
+    -
+      entity: 63546f0e-4fe2-4875-8dda-16da720bd04f
+  field_end_time:
+    -
+      value: '2026-10-14T10:30:00'
+  field_featured:
+    -
+      value: true
+  field_max_seats:
+    -
+      value: 1500
+  field_room:
+    -
+      value: 'Main Hall'
+  field_session_status:
+    -
+      value: scheduled
+  field_session_type:
+    -
+      value: keynote
+  field_skill_level:
+    -
+      entity: 6ad3ec3d-ba05-414e-b7ed-2ee02d684ff6
+  field_slides_url:
+    -
+      uri: 'https://slides.example/keynote-2026'
+      title: null
+      options: {  }
+  field_speakers:
+    -
+      entity: c05f9e05-c22f-4909-a65b-2aa9f4bb0e40
+  field_start_time:
+    -
+      value: '2026-10-14T09:30:00'
+  field_topics:
+    -
+      entity: 92bda70b-7642-4aa2-a3a7-b33d1438bc5c
+  field_track:
+    -
+      entity: 2dd1ff2d-891c-4b21-81b1-e416ea63532f
+  field_video_url:
+    -
+      uri: 'https://video.example/keynote-2026'
+      title: null
+      options: {  }

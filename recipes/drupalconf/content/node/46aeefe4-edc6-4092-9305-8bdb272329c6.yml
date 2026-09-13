@@ -1,0 +1,62 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 46aeefe4-edc6-4092-9305-8bdb272329c6
+  bundle: speaker
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Tom Müller'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /speakers/tom-muller
+      langcode: en
+  body:
+    -
+      value: '<p>Tom runs DevOps at Pantheon and has automated deployment pipelines for hundreds of Drupal sites.</p>'
+      format: basic_html
+      summary: ''
+  field_company:
+    -
+      value: Pantheon
+  field_country:
+    -
+      value: DE
+  field_featured:
+    -
+      value: false
+  field_job_title:
+    -
+      value: 'DevOps Lead'
+  field_social_links:
+    -
+      uri: 'https://github.com/tommueller'
+      title: GitHub
+      options: {  }
+  field_speaker_email:
+    -
+      value: tom@example.com
+  field_website:
+    -
+      uri: 'https://tommueller.dev'
+      title: null
+      options: {  }

@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sort_weight
+    - node.type.sponsor
+id: node.sponsor.field_sort_weight
+field_name: field_sort_weight
+entity_type: node
+bundle: sponsor
+label: 'Sort weight'
+description: 'Manual sort order within tier.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

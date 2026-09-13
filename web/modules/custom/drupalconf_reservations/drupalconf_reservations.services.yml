@@ -1,0 +1,7 @@
+services:
+  drupalconf_reservations.manager:
+    class: Drupal\drupalconf_reservations\ReservationManager
+    arguments:
+      - '@entity_type.manager'
+      - '@plugin.manager.mail'
+      - '@language_manager'

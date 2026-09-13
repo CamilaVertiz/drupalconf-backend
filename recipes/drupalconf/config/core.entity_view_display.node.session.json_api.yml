@@ -1,0 +1,149 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.json_api
+    - field.field.node.session.body
+    - field.field.node.session.field_conference
+    - field.field.node.session.field_end_time
+    - field.field.node.session.field_featured
+    - field.field.node.session.field_max_seats
+    - field.field.node.session.field_room
+    - field.field.node.session.field_session_status
+    - field.field.node.session.field_session_type
+    - field.field.node.session.field_skill_level
+    - field.field.node.session.field_slides_url
+    - field.field.node.session.field_speakers
+    - field.field.node.session.field_start_time
+    - field.field.node.session.field_topics
+    - field.field.node.session.field_track
+    - field.field.node.session.field_video_url
+    - node.type.session
+  module:
+    - datetime
+    - link
+    - options
+    - text
+id: node.session.json_api
+targetEntityType: node
+bundle: session
+mode: json_api
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_conference:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_end_time:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_max_seats:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_room:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_session_type:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_skill_level:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_slides_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 0
+      url_only: true
+      url_plain: true
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_speakers:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_start_time:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_topics:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_track:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_video_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 0
+      url_only: true
+      url_plain: true
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 13
+    region: content
+hidden:
+  field_description: true
+  field_featured: true
+  field_session_status: true
+  links: true

@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: conference
+label: Conference
+type: 'canonical_entities:node'
+pattern: 'conferences/[node:title]'
+selection_criteria:
+  d3a4f5b6-0000-4000-8000-000000000003:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: d3a4f5b6-0000-4000-8000-000000000003
+    context_mapping:
+      node: node
+    bundles:
+      conference: conference
+selection_logic: and
+weight: 0
+relationships: {  }

@@ -1,0 +1,62 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 0ca9664c-04c9-4a8e-a52a-0c05bd380b5a
+  bundle: sponsor
+  default_langcode: en
+  depends:
+    63546f0e-4fe2-4875-8dda-16da720bd04f: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'PixelForge Studio'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /sponsors/pixelforge-studio
+      langcode: en
+  body:
+    -
+      value: '<p>Design-led Drupal theming studio specializing in editorial and publishing platforms.</p>'
+      format: basic_html
+      summary: ''
+  field_conferences:
+    -
+      entity: 63546f0e-4fe2-4875-8dda-16da720bd04f
+  field_contact_email:
+    -
+      value: hello@pixelforge.example
+  field_contact_name:
+    -
+      value: 'Sam Patel'
+  field_sort_weight:
+    -
+      value: 20
+  field_tagline:
+    -
+      value: 'Design-led Drupal theming.'
+  field_tier:
+    -
+      value: silver
+  field_website:
+    -
+      uri: 'https://pixelforge.example'
+      title: null
+      options: {  }

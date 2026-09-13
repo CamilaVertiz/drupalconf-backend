@@ -1,0 +1,54 @@
+name: 'DrupalConf'
+description: 'Installs the DrupalConf conference platform.'
+type: 'Site'
+
+recipes:
+  - core/recipes/restricted_html_format
+  - core/recipes/basic_html_format_editor
+  - core/recipes/full_html_format_editor
+  - core/recipes/image_media_type
+  - core/recipes/administrator_role
+  - core/recipes/core_recommended_admin_theme
+  - core/recipes/core_recommended_front_end_theme
+
+install:
+  # Content model.
+  - node
+  - field
+  - datetime
+  - link
+  - options
+  - telephone
+  - text
+  - taxonomy
+  - comment
+  # Menus and path aliases.
+  - menu_ui
+  - menu_link_content
+  - path
+  - pathauto
+  - token
+  # Paragraphs and field UI.
+  - entity_reference_revisions
+  - paragraphs
+  - field_group
+  - media_library
+  # JSON:API and decoupled routing.
+  - serialization
+  - jsonapi
+  - jsonapi_extras
+  - decoupled_router
+  - jsonapi_menu_items
+  # Editorial UX.
+  - contextual
+  - toolbar
+  # Custom modules.
+  - drupalconf_api
+  - drupalconf_reservations
+  - drupalconf_default_content
+
+config:
+  actions:
+    jsonapi.settings:
+      simpleConfigUpdate:
+        read_only: true

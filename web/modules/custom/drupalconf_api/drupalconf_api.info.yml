@@ -1,0 +1,5 @@
+name: DrupalConf API
+type: module
+description: 'Provides the contact form submission endpoint and its settings.'
+core_version_requirement: ^11
+package: DrupalConf

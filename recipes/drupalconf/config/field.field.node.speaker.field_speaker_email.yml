@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_speaker_email
+    - node.type.speaker
+id: node.speaker.field_speaker_email
+field_name: field_speaker_email
+entity_type: node
+bundle: speaker
+label: 'Speaker email'
+description: 'Private — admin only. Hidden in public view modes.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

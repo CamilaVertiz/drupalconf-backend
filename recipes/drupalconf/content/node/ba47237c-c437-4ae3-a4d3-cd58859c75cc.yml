@@ -1,0 +1,79 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ba47237c-c437-4ae3-a4d3-cd58859c75cc
+  bundle: session
+  default_langcode: en
+  depends:
+    caea0e2f-b7f3-4ecb-9e0e-718e580376a8: node
+    6ffe94f5-4a48-4a60-ae3d-d35b3ef0f9ef: taxonomy_term
+    cefa8ac7-5bd7-43d8-9203-78ccd0c63cda: node
+    946def9e-4947-4b3e-801c-bbd8306fd222: taxonomy_term
+    1600240a-ff64-4b64-9aed-80e74c5c8a72: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Building Headless Sites with JSON:API'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /conferences/drupalconnect-spring-2026/schedule/building-headless-sites-jsonapi
+      langcode: en
+  body:
+    -
+      value: '<p>A hands-on look at consuming Drupal content from a decoupled frontend over JSON:API.</p>'
+      format: basic_html
+      summary: ''
+  field_conference:
+    -
+      entity: caea0e2f-b7f3-4ecb-9e0e-718e580376a8
+  field_end_time:
+    -
+      value: '2026-04-25T10:45:00'
+  field_featured:
+    -
+      value: false
+  field_max_seats:
+    -
+      value: 120
+  field_room:
+    -
+      value: 'Room A'
+  field_session_status:
+    -
+      value: scheduled
+  field_session_type:
+    -
+      value: talk
+  field_skill_level:
+    -
+      entity: 6ffe94f5-4a48-4a60-ae3d-d35b3ef0f9ef
+  field_speakers:
+    -
+      entity: cefa8ac7-5bd7-43d8-9203-78ccd0c63cda
+  field_start_time:
+    -
+      value: '2026-04-25T10:00:00'
+  field_topics:
+    -
+      entity: 946def9e-4947-4b3e-801c-bbd8306fd222
+  field_track:
+    -
+      entity: 1600240a-ff64-4b64-9aed-80e74c5c8a72

@@ -1,0 +1,79 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 648fc326-0cef-4107-99aa-4d87042fad47
+  bundle: session
+  default_langcode: en
+  depends:
+    63546f0e-4fe2-4875-8dda-16da720bd04f: node
+    6ad3ec3d-ba05-414e-b7ed-2ee02d684ff6: taxonomy_term
+    03acd51a-ff43-4b85-b297-6ed1a369dad9: node
+    2d34ce55-09f3-4e2e-a7a5-ca5f2eb9f5c1: taxonomy_term
+    2dd1ff2d-891c-4b21-81b1-e416ea63532f: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Inclusive Content Editing'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /conferences/drupalconf-2026/schedule/inclusive-content-editing
+      langcode: en
+  body:
+    -
+      value: '<p>A practical, example-driven session on inclusive content editing.</p>'
+      format: basic_html
+      summary: ''
+  field_conference:
+    -
+      entity: 63546f0e-4fe2-4875-8dda-16da720bd04f
+  field_end_time:
+    -
+      value: '2026-10-14T15:45:00'
+  field_featured:
+    -
+      value: false
+  field_max_seats:
+    -
+      value: 150
+  field_room:
+    -
+      value: 'Room A'
+  field_session_status:
+    -
+      value: scheduled
+  field_session_type:
+    -
+      value: workshop
+  field_skill_level:
+    -
+      entity: 6ad3ec3d-ba05-414e-b7ed-2ee02d684ff6
+  field_speakers:
+    -
+      entity: 03acd51a-ff43-4b85-b297-6ed1a369dad9
+  field_start_time:
+    -
+      value: '2026-10-14T15:00:00'
+  field_topics:
+    -
+      entity: 2d34ce55-09f3-4e2e-a7a5-ca5f2eb9f5c1
+  field_track:
+    -
+      entity: 2dd1ff2d-891c-4b21-81b1-e416ea63532f

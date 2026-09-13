@@ -1,0 +1,79 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e035712d-1f47-46ad-9a9d-2fac4c1796fc
+  bundle: session
+  default_langcode: en
+  depends:
+    63546f0e-4fe2-4875-8dda-16da720bd04f: node
+    6ffe94f5-4a48-4a60-ae3d-d35b3ef0f9ef: taxonomy_term
+    46aeefe4-edc6-4092-9305-8bdb272329c6: node
+    e80177fa-3246-4067-bc38-67914e3e36fb: taxonomy_term
+    e497c6dc-4451-4271-9deb-915bde4049b8: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'CI/CD with GitHub Actions'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /conferences/drupalconf-2026/schedule/cicd-github-actions
+      langcode: en
+  body:
+    -
+      value: '<p>A practical, example-driven session on ci/cd with github actions.</p>'
+      format: basic_html
+      summary: ''
+  field_conference:
+    -
+      entity: 63546f0e-4fe2-4875-8dda-16da720bd04f
+  field_end_time:
+    -
+      value: '2026-10-14T16:45:00'
+  field_featured:
+    -
+      value: false
+  field_max_seats:
+    -
+      value: 175
+  field_room:
+    -
+      value: 'Room C'
+  field_session_status:
+    -
+      value: scheduled
+  field_session_type:
+    -
+      value: talk
+  field_skill_level:
+    -
+      entity: 6ffe94f5-4a48-4a60-ae3d-d35b3ef0f9ef
+  field_speakers:
+    -
+      entity: 46aeefe4-edc6-4092-9305-8bdb272329c6
+  field_start_time:
+    -
+      value: '2026-10-14T16:00:00'
+  field_topics:
+    -
+      entity: e80177fa-3246-4067-bc38-67914e3e36fb
+  field_track:
+    -
+      entity: e497c6dc-4451-4271-9deb-915bde4049b8

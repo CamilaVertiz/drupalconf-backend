@@ -1,0 +1,10 @@
+name: 'DrupalConf Default Content'
+type: module
+description: 'Creates the default pages, blog posts, and main menu after the DrupalConf recipe is applied.'
+core_version_requirement: ^11
+package: 'DrupalConf'
+dependencies:
+  - drupal:node
+  - drupal:menu_link_content
+  - paragraphs:paragraphs
+  - drupalconf:drupalconf_reservations

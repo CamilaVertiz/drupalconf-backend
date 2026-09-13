@@ -1,0 +1,199 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.conference
+  module:
+    - jsonapi_extras
+    - node
+id: node--conference
+disabled: null
+path: node/conference
+resourceType: node--conference
+resourceFields:
+  nid:
+    disabled: true
+    fieldName: nid
+    publicName: nid
+    enhancer:
+      id: ''
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  vid:
+    disabled: true
+    fieldName: vid
+    publicName: vid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: true
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  type:
+    disabled: true
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+  title:
+    disabled: false
+    fieldName: title
+    publicName: title
+    enhancer:
+      id: ''
+  status:
+    disabled: false
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+  uid:
+    disabled: true
+    fieldName: uid
+    publicName: uid
+    enhancer:
+      id: ''
+  created:
+    disabled: false
+    fieldName: created
+    publicName: created
+    enhancer:
+      id: ''
+  changed:
+    disabled: false
+    fieldName: changed
+    publicName: changed
+    enhancer:
+      id: ''
+  promote:
+    disabled: true
+    fieldName: promote
+    publicName: promote
+    enhancer:
+      id: ''
+  sticky:
+    disabled: true
+    fieldName: sticky
+    publicName: sticky
+    enhancer:
+      id: ''
+  default_langcode:
+    disabled: true
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''
+  revision_default:
+    disabled: true
+    fieldName: revision_default
+    publicName: revision_default
+    enhancer:
+      id: ''
+  revision_translation_affected:
+    disabled: true
+    fieldName: revision_translation_affected
+    publicName: revision_translation_affected
+    enhancer:
+      id: ''
+  path:
+    disabled: false
+    fieldName: path
+    publicName: path
+    enhancer:
+      id: ''
+  menu_link:
+    disabled: true
+    fieldName: menu_link
+    publicName: menu_link
+    enhancer:
+      id: ''
+  content_translation_source:
+    disabled: true
+    fieldName: content_translation_source
+    publicName: content_translation_source
+    enhancer:
+      id: ''
+  content_translation_outdated:
+    disabled: true
+    fieldName: content_translation_outdated
+    publicName: content_translation_outdated
+    enhancer:
+      id: ''
+  body:
+    disabled: false
+    fieldName: body
+    publicName: body
+    enhancer:
+      id: ''
+  field_conference_status:
+    disabled: false
+    fieldName: field_conference_status
+    publicName: conference_status
+    enhancer:
+      id: ''
+  field_date_end:
+    disabled: false
+    fieldName: field_date_end
+    publicName: date_end
+    enhancer:
+      id: ''
+  field_date_start:
+    disabled: false
+    fieldName: field_date_start
+    publicName: date_start
+    enhancer:
+      id: ''
+  field_featured:
+    disabled: false
+    fieldName: field_featured
+    publicName: featured
+    enhancer:
+      id: ''
+  field_hero_image:
+    disabled: false
+    fieldName: field_hero_image
+    publicName: hero_image
+    enhancer:
+      id: ''
+  field_logo:
+    disabled: false
+    fieldName: field_logo
+    publicName: logo
+    enhancer:
+      id: ''
+  field_max_attendees:
+    disabled: false
+    fieldName: field_max_attendees
+    publicName: max_attendees
+    enhancer:
+      id: ''
+  field_social_links:
+    disabled: false
+    fieldName: field_social_links
+    publicName: social_links
+    enhancer:
+      id: ''
+  field_tagline:
+    disabled: false
+    fieldName: field_tagline
+    publicName: tagline
+    enhancer:
+      id: ''
+  field_venue:
+    disabled: false
+    fieldName: field_venue
+    publicName: venue
+    enhancer:
+      id: ''
+  field_website:
+    disabled: false
+    fieldName: field_website
+    publicName: website
+    enhancer:
+      id: ''

@@ -1,0 +1,61 @@
+<?php
+
+/**
+ * @file
+ * Hooks for the DrupalConf Reservations module.
+ */
+
+declare(strict_types=1);
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+use Drupal\drupalconf_reservations\Field\SeatsRemainingItemList;
+
+/**
+ * Implements hook_entity_bundle_field_info().
+ *
+ * Adds a computed seats_remaining field to session nodes.
+ *
+ * @phpstan-param array<string, \Drupal\Core\Field\FieldDefinitionInterface> $base_field_definitions
+ * @phpstan-return array<string, \Drupal\Core\Field\FieldDefinitionInterface>
+ */
+function drupalconf_reservations_entity_bundle_field_info(EntityTypeInterface $entity_type, string $bundle, array $base_field_definitions): array {
+  if ($entity_type->id() !== 'node' || $bundle !== 'session') {
+    return [];
+  }
+
+  $fields = [];
+  $fields['seats_remaining'] = BaseFieldDefinition::create('integer')
+    ->setLabel(new TranslatableMarkup('Seats remaining'))
+    ->setDescription(new TranslatableMarkup('Computed remaining capacity (NULL when unlimited).'))
+    ->setComputed(TRUE)
+    ->setClass(SeatsRemainingItemList::class)
+    ->setSetting('unsigned', TRUE);
+
+  return $fields;
+}
+
+/**
+ * Implements hook_mail().
+ *
+ * @phpstan-param array<string, mixed> $message
+ * @phpstan-param array<string, mixed> $params
+ */
+function drupalconf_reservations_mail(string $key, array &$message, array $params): void {
+  switch ($key) {
+    case 'reservation_confirmation':
+      $message['subject'] = 'Your DrupalConf reservation is confirmed';
+      $message['body'][] = sprintf('Hi %s,', $params['name'] ?? 'there');
+      $message['body'][] = sprintf('Your reservation for "%s" is confirmed.', $params['session_title'] ?? '');
+      break;
+
+    case 'reservation_lookup':
+      $message['subject'] = 'Your DrupalConf reservations';
+      $message['body'][] = 'Here are the sessions you have reserved:';
+      foreach (($params['sessions'] ?? []) as $title) {
+        $message['body'][] = '- ' . $title;
+      }
+      break;
+  }
+}

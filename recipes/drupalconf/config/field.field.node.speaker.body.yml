@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.speaker
+  module:
+    - text
+id: node.speaker.body
+field_name: body
+entity_type: node
+bundle: speaker
+label: Bio
+description: 'Full speaker bio. Summary is the short intro shown in teaser/card views.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

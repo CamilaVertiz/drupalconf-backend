@@ -1,0 +1,68 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 86002a9d-d938-4631-8998-b26390ccb057
+  bundle: sponsor
+  default_langcode: en
+  depends:
+    63546f0e-4fe2-4875-8dda-16da720bd04f: node
+    caea0e2f-b7f3-4ecb-9e0e-718e580376a8: node
+    54c69ec8-012c-4b56-88f3-365e91225e6c: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Acme Digital'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /sponsors/acme-digital
+      langcode: en
+  body:
+    -
+      value: '<p>Strategic Drupal partner with a focus on enterprise migrations and platform engineering.</p>'
+      format: basic_html
+      summary: ''
+  field_conferences:
+    -
+      entity: 63546f0e-4fe2-4875-8dda-16da720bd04f
+    -
+      entity: caea0e2f-b7f3-4ecb-9e0e-718e580376a8
+    -
+      entity: 54c69ec8-012c-4b56-88f3-365e91225e6c
+  field_contact_email:
+    -
+      value: partnerships@acmedigital.example
+  field_contact_name:
+    -
+      value: 'Jordan Smith'
+  field_sort_weight:
+    -
+      value: 0
+  field_tagline:
+    -
+      value: 'Strategic Drupal partner.'
+  field_tier:
+    -
+      value: platinum
+  field_website:
+    -
+      uri: 'https://acmedigital.example'
+      title: null
+      options: {  }

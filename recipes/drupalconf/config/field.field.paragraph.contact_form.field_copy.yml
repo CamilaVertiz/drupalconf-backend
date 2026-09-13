@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_copy
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.contact_form
+  module:
+    - text
+id: paragraph.contact_form.field_copy
+field_name: field_copy
+entity_type: paragraph
+bundle: contact_form
+label: Intro
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

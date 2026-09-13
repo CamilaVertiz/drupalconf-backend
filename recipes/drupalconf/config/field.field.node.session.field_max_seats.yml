@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_max_seats
+    - node.type.session
+id: node.session.field_max_seats
+field_name: field_max_seats
+entity_type: node
+bundle: session
+label: 'Max seats'
+description: 'Leave empty for unlimited capacity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

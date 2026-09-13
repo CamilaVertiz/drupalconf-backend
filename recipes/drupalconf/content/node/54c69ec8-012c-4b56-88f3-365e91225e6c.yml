@@ -1,0 +1,70 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 54c69ec8-012c-4b56-88f3-365e91225e6c
+  bundle: conference
+  default_langcode: en
+  depends:
+    ea3d08bb-5b8a-402f-a499-8d7c006e6320: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'DrupalConf 2025'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /conferences/drupalconf-2025
+      langcode: en
+  body:
+    -
+      value: '<p>The 2025 edition — recordings and slides from every session are still available below.</p>'
+      format: basic_html
+      summary: ''
+  field_conference_status:
+    -
+      value: past
+  field_date_end:
+    -
+      value: '2025-09-20T18:00:00'
+  field_date_start:
+    -
+      value: '2025-09-18T09:00:00'
+  field_featured:
+    -
+      value: false
+  field_max_attendees:
+    -
+      value: 1300
+  field_social_links:
+    -
+      uri: 'https://twitter.com/drupalconf'
+      title: X
+      options: {  }
+  field_tagline:
+    -
+      value: 'A look back at the 2025 edition.'
+  field_venue:
+    -
+      entity: ea3d08bb-5b8a-402f-a499-8d7c006e6320
+  field_website:
+    -
+      uri: 'https://2025.drupalconf.example'
+      title: '2025 archive'
+      options: {  }

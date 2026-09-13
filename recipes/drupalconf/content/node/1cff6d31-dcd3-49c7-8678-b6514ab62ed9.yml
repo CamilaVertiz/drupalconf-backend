@@ -1,0 +1,65 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 1cff6d31-dcd3-49c7-8678-b6514ab62ed9
+  bundle: sponsor
+  default_langcode: en
+  depends:
+    63546f0e-4fe2-4875-8dda-16da720bd04f: node
+    caea0e2f-b7f3-4ecb-9e0e-718e580376a8: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'NorthStar Hosting'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /sponsors/northstar-hosting
+      langcode: en
+  body:
+    -
+      value: '<p>Managed Drupal hosting with auto-scaling, edge caching, and 24/7 expert support.</p>'
+      format: basic_html
+      summary: ''
+  field_conferences:
+    -
+      entity: 63546f0e-4fe2-4875-8dda-16da720bd04f
+    -
+      entity: caea0e2f-b7f3-4ecb-9e0e-718e580376a8
+  field_contact_email:
+    -
+      value: sponsors@northstarhosting.example
+  field_contact_name:
+    -
+      value: 'Riley Nakamura'
+  field_sort_weight:
+    -
+      value: 10
+  field_tagline:
+    -
+      value: 'Managed Drupal hosting that scales.'
+  field_tier:
+    -
+      value: gold
+  field_website:
+    -
+      uri: 'https://northstarhosting.example'
+      title: null
+      options: {  }

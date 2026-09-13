@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.basic_page
+    - paragraphs.paragraphs_type.contact_form
+    - paragraphs.paragraphs_type.copy
+    - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.listing
+  module:
+    - entity_reference_revisions
+id: node.basic_page.field_content
+field_name: field_content
+entity_type: node
+bundle: basic_page
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      contact_form: contact_form
+      copy: copy
+      hero: hero
+      listing: listing
+    negate: 0
+    target_bundles_drag_drop:
+      contact_form:
+        weight: 7
+        enabled: true
+      copy:
+        weight: 4
+        enabled: true
+      hero:
+        weight: 5
+        enabled: true
+      listing:
+        weight: 6
+        enabled: true
+field_type: entity_reference_revisions
